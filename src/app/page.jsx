@@ -2,7 +2,6 @@
 
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import { FaTruckFast } from "react-icons/fa6";
 import { AiOutlineMenu } from "react-icons/ai";
 
 export default function Home() {
@@ -11,18 +10,19 @@ export default function Home() {
   const menu = () => {
     router.push("/menu");
   };
-  const aboutus = () =>{
-  router.push("/about_us");
-  }
+  const aboutus = () => {
+    router.push("/about_us");
+  };
+
   return (
     <main className="min-h-screen bg-background">
-      <div className=" flex justify-center items-center gap-2 mr-35 md:block ">
+      <div className=" flex  gap-2 md:block ">
         <div className="md:relative">
           <h1 className="text-orange-600 md:text-2xl text-3xl font-bold font-serif  ml-5 mt-10  md:ml-5 md:mt-10 ">
             Foodie
           </h1>
         </div>
-        <div className="md:absolute md:top-7 md:left-25 md:ml-3  ">
+        <div className="md:absolute md:top-7 md:left-25 absolute  top-7 left-32 md:ml-3  ">
           <Image
             src="/roasted-chicken.png"
             alt="Delicious food delivery"
@@ -31,9 +31,14 @@ export default function Home() {
           />
         </div>
         <div className="md:flex md:gap-10 md:absolute md:top-7 md:right-12 md:ml-3 font-medium text-lg sm:hidden hidden ">
-          <p className="cursor-pointer hover:text-orange-600 hover:underline"onClick={aboutus}>About Us</p>
           <p
-            className="cursor-pointer hover:text-orange-600 hover:underline "
+            className="cursor-pointer hover:text-orange-600 "
+            onClick={aboutus}
+          >
+            About Us
+          </p>
+          <p
+            className="cursor-pointer hover:text-orange-600  "
             onClick={() => {
               router.push("/product_highlights");
             }}
@@ -41,7 +46,7 @@ export default function Home() {
             Product Highlights
           </p>
           <p
-            className="cursor-pointer hover:text-orange-600 hover:underline"
+            className="cursor-pointer hover:text-orange-600 "
             onClick={() => {
               router.push("/contact");
             }}
@@ -96,7 +101,7 @@ export default function Home() {
             {/* Feature 1 */}
             <div className="flex flex-col items-center text-center">
               <div className="mb-2">
-                 <Image
+                <Image
                   src="/fast delivery truck.png"
                   alt="fast delivery truck"
                   width={100}
@@ -133,12 +138,12 @@ export default function Home() {
             <div className="flex flex-col items-center text-center">
               <div className="mb-15 mt-20">
                 <Image
-            src="/best-price.png"
-            alt="Affordable Pricing"
-                width={200}
+                  src="/best-price.png"
+                  alt="Affordable Pricing"
+                  width={200}
                   height={100}
-            className="w-16 h-16"
-          />
+                  className="w-16 h-16"
+                />
               </div>
               <h3 className="text-xl font-semibold mb-2">Affordable Pricing</h3>
               <p className="text-muted-foreground">
