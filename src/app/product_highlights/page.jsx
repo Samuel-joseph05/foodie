@@ -46,7 +46,7 @@ export default function BestSellers() {
   ];
 
   return (
-    <section className="relative py-16 px-4 ">
+    <section className="relative py-5 px-4 ">
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-background/95" />
       </div>
@@ -54,7 +54,7 @@ export default function BestSellers() {
       <div className="relative z-10 mx-auto max-w-7xl">
         <button
           onClick={back}
-          className="mb-6 flex items-center gap-2 text-muted-foreground bg-black text-white lg:px-5 px-3 py-1  lg:py-2   rounded-2xl  hover:text-foreground"
+          className="mb-10 flex items-center gap-2 text-muted-foreground bg-black text-white lg:px-5 px-3 py-1  lg:py-2   rounded-2xl  hover:text-foreground"
         >
           <FaArrowLeftLong className="h-5 w-5" />
         </button>
@@ -67,7 +67,7 @@ export default function BestSellers() {
           </p>
         </div>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4  ">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4  mx-5">
           {bestSellers.map((item) => (
             <div
               key={item.id}
