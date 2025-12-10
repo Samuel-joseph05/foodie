@@ -3,8 +3,6 @@ import { useRouter } from "next/navigation";
 import { HiXMark } from "react-icons/hi2";
 
 export default function Menubar() {
-
-
   const router = useRouter();
   const aboutus = () => {
     router.push("/about_us");
@@ -15,7 +13,6 @@ export default function Menubar() {
   const contact = () => {
     router.push("/contact");
   };
-
 
   return (
     <section className="select-none">
@@ -28,13 +25,15 @@ export default function Menubar() {
         />
       </div>
       <div className="relative font-medium ml-22 mt-25 text-2xl">
-        <p className="mb-3 hover:underline" onClick={aboutus}>
+        <p className="mb-3 hover:text-orange-600" onClick={aboutus}>
           About Us
         </p>
-        <p className="mb-3 hover:underline" onClick={ProductHighlights}>
+        <p className="mb-3 hover:text-orange-600" onClick={ProductHighlights}>
           Product Highlights
         </p>
-        <p onClick={contact} className="hover:underline">Contact Us</p>
+        <p onClick={contact} className="hover:text-orange-600">
+          Contact Us
+        </p>
       </div>
     </section>
   );
