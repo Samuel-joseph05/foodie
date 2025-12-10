@@ -3,7 +3,7 @@ import "./globals.css";
 
 
 export const metadata = {
-  title: "Food Landing Page",
+  title: "Foodie",
   description: "Responsive landing page built with Next.js, Tailwind & v0",
 };
 
