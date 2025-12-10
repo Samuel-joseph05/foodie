@@ -84,13 +84,13 @@ export default function Home() {
           </div>
 
           {/* Right Image */}
-          <div className="relative w-[300]  lg:flex-1 aspect-square lg:h-[500px] h-[220px] rounded-2xl overflow-hidden bg-gray-100">
+          <div className="relative w-[300] h-[300]  lg:flex-1 aspect-square lg:h-[500px]  rounded-2xl overflow-hidden bg-gray-100">
             <Image
               src="/Chicken.jpg"
               alt="Delicious food delivery"
               width={800}
               height={300}
-              className=" object-cover"
+              className=" object-cover w-full h-full"
             />
           </div>
         </div>
@@ -104,7 +104,7 @@ export default function Home() {
                 <Image
                   src="/fast delivery truck.png"
                   alt="fast delivery truck"
-                  width={100}
+                  width={150}
                   height={200}
                   className="rounded-sm lg:w-[200] lg:h-[200] "
                 />
@@ -140,9 +140,9 @@ export default function Home() {
                 <Image
                   src="/best-price.png"
                   alt="Affordable Pricing"
-                  width={200}
+                  width={100}
                   height={100}
-                  className="w-16 h-16"
+                  className="lg:w-16 lg:h-16"
                 />
               </div>
               <h3 className="text-xl font-semibold mb-2">Affordable Pricing</h3>
