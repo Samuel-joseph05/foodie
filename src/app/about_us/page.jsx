@@ -12,14 +12,13 @@ export default function AboutSection() {
 
   return (
     <section className="relative overflow-hidden bg-linear-to-br from-orange-50 via-white to-amber-50 py-20 lg:py-10">
-        <button
-          onClick={back}
-          className="absolute top-5 left-2 mb-6 flex items-center gap-2 text-muted-foreground bg-black text-white px-3 py-1 lg:px-5 lg:py-2 rounded-2xl  hover:text-foreground"
-        >
-          <FaArrowLeftLong className="h-5 w-5" />
-        </button>
+      <button
+        onClick={back}
+        className="absolute top-5 left-2 mb-6 flex items-center gap-2 text-muted-foreground bg-black text-white px-3 py-1 lg:px-5 lg:py-2 rounded-2xl  hover:text-foreground"
+      >
+        <FaArrowLeftLong className="h-5 w-5" />
+      </button>
       <div className="mx-auto max-w-7xl px-6  lg:px-8">
-        
         {/* Header */}
         <div className="mx-auto max-w-3xl text-center mb-20">
           <h1 className="text-5xl lg:text-5xl font-bold tracking-tight text-gray-900 mb-6">
