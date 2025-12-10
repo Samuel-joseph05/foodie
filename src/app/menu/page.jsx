@@ -18,7 +18,7 @@ export default function Menubar() {
 
 
   return (
-    <section className="">
+    <section className="select-none">
       <div className="absolute right-4 top-9">
         <HiXMark
           size={30}
